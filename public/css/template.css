@@ -1,0 +1,20 @@
+.bar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.elem{
+    float:left;
+    justify-content: space-between;
+}
+
+.marginado{
+    padding-top:35px;
+}
+
+li
+{   
+    display: inline;
+}
