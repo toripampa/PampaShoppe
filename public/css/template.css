@@ -1,15 +1,31 @@
+body{
+    background-color: whitesmoke;
+}
 .description{
+    color: #ffffff;
+    font-family: 'Helvetica 53 Extended';
+    
+    font-weight: bolder;
     display: block;
     padding-left:100px;
 }
 
 .negative{
     justify-content: space-between;
-    margin-inline: 15px;
+    padding-left: 35px;
+    padding-right: 50px;
+    padding-top: 15px;
+}
+a{
+    color: black;
 }
 
 .media-link{
-    padding-top: 35px;
+    padding-top: 10px;
+    font-family: 'Helvetica 53 Extended';
+    font-size: 12px;
+
+    
 }
 
 .justify{
@@ -18,9 +34,16 @@
 
 .individual{
     background-color: #5f6476;
+   
 }
 
 li
-{   
+{   border-bottom: 2px black solid;
     display: inline;
 }
+
+.container
+{
+    max-width: 950px;
+}
+
