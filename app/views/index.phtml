@@ -11,22 +11,23 @@
         <link rel="stylesheet" href="<?php echo $this->url->get('css/template.css')?>"/>
     </head>
     <body>
-        <div class="container">
-     
-        <div class="elem bar">
-            <div>
-                <img src="img/logo.png" height="100" width="250">
+        <div class='row negative fixed-top'>
+            <div class="bar">
+                <div>
+                    <img src="img/logo.png" height="100" width="250">
+                </div>
+            </div>
+    
+        
+            <div class='media-link'>
+                <ul>
+                    <li><a href="#">Ropa</a></li>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
             </div>
         </div>
-
-    
-        <div class='elem marginado sticky-top'>
-            <ul>
-                <li><a href="#">Ropa</a></li>
-                <li><a href="#">Info</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </div>
+        <div class="container">
             <?php echo $this->getContent(); ?>
         </div>
         <!-- jQuery first, then Popper.js, and then Bootstrap's JavaScript -->

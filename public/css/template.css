@@ -1,15 +1,23 @@
-
-.bar{
-    width:910px;
-    float:left;
-    align-items: center;
-    
+.description{
+    display: block;
+    padding-left:100px;
 }
 
+.negative{
+    justify-content: space-between;
+    margin-inline: 15px;
+}
 
-.marginado{
-    padding-top:35px;
-    display:inline-block;
+.media-link{
+    padding-top: 35px;
+}
+
+.justify{
+    margin:0;
+}
+
+.individual{
+    background-color: #5f6476;
 }
 
 li
