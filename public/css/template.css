@@ -1,17 +1,15 @@
-.bar
-{
-    display: flex;
+
+.bar{
+    width:910px;
+    float:left;
     align-items: center;
-    justify-content: space-between;
     
 }
-.elem{
-    float:left;
-    justify-content: space-between;
-}
+
 
 .marginado{
     padding-top:35px;
+    display:inline-block;
 }
 
 li
