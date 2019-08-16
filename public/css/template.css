@@ -1,5 +1,14 @@
+
 body{
-    background-color: whitesmoke;
+    background-image: url("fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+    background-attachment: local;
+   
+    
+    
+    
 }
 .description{
     color: #ffffff;
@@ -11,13 +20,14 @@ body{
 }
 
 .negative{
+    mix-blend-mode: difference;
     justify-content: space-between;
     padding-left: 35px;
     padding-right: 50px;
     padding-top: 15px;
 }
 a{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .media-link{
@@ -32,18 +42,23 @@ a{
     margin:0;
 }
 
-.individual{
+.top{
     background-color: #5f6476;
    
 }
+.remera{
+    background-color: #af4803;
+   
+}
+
 
 li
-{   border-bottom: 2px black solid;
+{   border-bottom: 2px rgb(255, 255, 255) solid;
     display: inline;
 }
 
 .container
 {
-    max-width: 950px;
+    max-width: 970px;
 }
 
