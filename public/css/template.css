@@ -1,15 +1,63 @@
 
 body{
-    background-image: url("fondo.jpg");
+    background-image: url("../img/fondo.jpg");
     background-repeat: no-repeat;
     background-size: 150%;
     background-position: center;
-    background-attachment: local;
-   
-    
-    
+    background-attachment: local; 
+}
+/*.oneback::after{
+    animation-name: fadeout;
+    animation-duration: .5s;
+    filter: opacity(0%);
+}*/
+.oneback{
+    position: relative;  
+    display: inline-block;
+}
+
+.back{
+    filter: opacity(0%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.front:hover{
+    animation-name: fadeout;
+    animation-duration: .5s;
+    filter: opacity(0%);
+}
+
+.front:hover + .back{
+    animation-name: fadein  ;
+    animation-duration: .5s;
+    filter: opacity(100%);
     
 }
+
+/*.oneback{
+    animation-name: fadeout;
+    animation-duration: .5s;
+    background: url("../img/modelo top edit.png") left top no-repeat;
+    background-size: 100%;
+}
+
+.oneback:hover{
+    animation-name: fadein;
+    animation-duration: .5s; 
+    background: url("../img/modelo top 2.png") left top no-repeat;
+    background-size: 100%;
+}*/
+
 .description{
     color: #ffffff;
     font-family: 'Helvetica 53 Extended';
@@ -62,3 +110,35 @@ li
     max-width: 970px;
 }
 
+
+.titlebox{
+    margin-top: 10%;
+    text-align: center;
+    
+}
+.itembox{
+    text-align: center;
+}
+.info{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Helvetica 83 Heavy Extended';
+    
+    text-shadow: 4px 4px rgb(8, 12, 70);
+}
+.item{
+    color: #ffffff;
+    font-family: 'Helvetica 53 Extended';   
+    font-size: 20px;
+    padding-top: 10px;
+    text-shadow: 1px 1px rgb(8, 12, 70);
+}
+
+@keyframes fadeout{
+    from {filter: opacity(100%);}
+    to{filter: opacity(0%);}
+}
+@keyframes fadein{
+    from {filter: opacity(0%);}
+    to{filter: opacity(100%);}
+}
