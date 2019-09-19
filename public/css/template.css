@@ -17,6 +17,8 @@ body{
 }
 
 .back{
+    animation-name: fadeout;
+    animation-duration: .5s;
     filter: opacity(0%);
     position: absolute;
     top: 0;
@@ -25,6 +27,8 @@ body{
 }
 
 .front{
+    animation-name: fadein  ;
+    animation-duration: .5s;
     position: absolute;
     top: 0;
     left: 0;
@@ -40,23 +44,8 @@ body{
 .front:hover + .back{
     animation-name: fadein  ;
     animation-duration: .5s;
-    filter: opacity(100%);
-    
+    filter: opacity(100%);   
 }
-
-/*.oneback{
-    animation-name: fadeout;
-    animation-duration: .5s;
-    background: url("../img/modelo top edit.png") left top no-repeat;
-    background-size: 100%;
-}
-
-.oneback:hover{
-    animation-name: fadein;
-    animation-duration: .5s; 
-    background: url("../img/modelo top 2.png") left top no-repeat;
-    background-size: 100%;
-}*/
 
 .description{
     color: #ffffff;
@@ -65,6 +54,7 @@ body{
     font-weight: bolder;
     display: block;
     padding-left:100px;
+    padding-bottom: 30px;
 }
 
 .negative{
@@ -90,16 +80,6 @@ a{
     margin:0;
 }
 
-.top{
-    background-color: #5f6476;
-   
-}
-.remera{
-    background-color: #af4803;
-   
-}
-
-
 li
 {   border-bottom: 2px rgb(255, 255, 255) solid;
     display: inline;
@@ -118,6 +98,8 @@ li
 }
 .itembox{
     text-align: center;
+    background-color: #ffffff;
+    mix-blend-mode: difference;
 }
 .info{
     color: #ffffff;
@@ -126,8 +108,11 @@ li
     
     text-shadow: 4px 4px rgb(8, 12, 70);
 }
+
+
+
 .item{
-    color: #ffffff;
+    color: #dad2d2;
     font-family: 'Helvetica 53 Extended';   
     font-size: 20px;
     padding-top: 10px;
